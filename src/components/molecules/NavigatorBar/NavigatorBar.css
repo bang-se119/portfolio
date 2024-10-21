@@ -1,0 +1,21 @@
+.navigator-bar-container {
+  width: "100%";
+}
+
+.navigator-bar-container .nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 50px;
+}
+
+.navigator-bar-container .nav-links a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+}
+
+.navigator-bar-container .nav-links a:hover {
+  color: rgb(62, 171, 230);
+}

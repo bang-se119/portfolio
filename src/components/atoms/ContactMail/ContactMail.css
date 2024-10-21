@@ -1,0 +1,31 @@
+.contact-mail-container {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-mail-container img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain;
+}
+
+.contact-mail-container:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 10px #16b1d0, 0 0 10px #21a2b3, 0 0 10px #16b1d0;
+  border-top: 1px solid #1794cf;
+  animation: ani 3s linear infinite;
+}
+
+@keyframes ani {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

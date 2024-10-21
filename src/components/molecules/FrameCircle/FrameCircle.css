@@ -1,0 +1,61 @@
+.frame-circle-container {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #26a4de;
+  box-shadow: 0 0 10px #1794cf, 0 0 20px #1794cf, 0 0 30px #1794cf,
+    0 0 60px #55a3c7;
+  cursor: pointer;
+  transition: transform 4s ease;
+}
+
+.frame-circle-container .frame-image {
+  z-index: 1;
+  width: 90%;
+  height: 90%;
+}
+
+.frame-circle-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.frame-circle-container .circle-inside {
+  background-color: rgba(220, 229, 234, 0.7);
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px solid #1794cf;
+  animation: ani 3s linear infinite;
+  position: absolute;
+}
+
+@keyframes ani {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.frame-circle-container:hover {
+  transform: scale(1.5);
+  transition-duration: 3s;
+  border: unset;
+}
+
+.frame-circle-container img:hover {
+  transform: scale(1.1);
+  transition-duration: 3s;
+}
