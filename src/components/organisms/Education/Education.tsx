@@ -59,11 +59,11 @@ const Education = () => {
             </div>
             <div className='car'>
                 <div className="chassis">
-                    <img alt='chassis' src='public/images/chassis.png' />
+                    <img alt='chassis' src='/portfolio-astro/images/chassis.png' />
                 </div>
                 <div className='wheels'>
-                    <img className='front-wheel' alt='front-wheel' src='public/images/wheel.png' />
-                    <img className='back-wheel' alt='back-wheel' src='public/images/wheel.png' />
+                    <img className='front-wheel' alt='front-wheel' src='/portfolio-astro/images/wheel.png' />
+                    <img className='back-wheel' alt='back-wheel' src='/portfolio-astro/images/wheel.png' />
                 </div>
             </div>
             {selectedSchool ? <CardEducation onClose={closeCardEducation} /> : <></>}

@@ -4,7 +4,7 @@ import './ContactMail.css';
 const ContactMail = () => {
   return (
     <div className='contact-mail-container'>
-        <img alt='logo-mail' src='public/images/logo-mail.png' />
+        <img alt='logo-mail' src='/portfolio-astro/images/logo-mail.png' />
     </div>
   )
 }

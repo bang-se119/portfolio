@@ -29,7 +29,7 @@ const About = () => {
         <ButtonLight>More About Me</ButtonLight>
       </div>
       <div className='frame-avatar'>
-        <FrameCircle className='animate__animated animate__fadeInRight' src='public/images/avatar-bangdd.png' />
+        <FrameCircle className='animate__animated animate__fadeInRight' src='/portfolio-astro/images/avatar-bangdd.png' />
       </div>
     </div >
   )
