@@ -13,7 +13,7 @@ import FrameCircle from '../../molecules/FrameCircle/FrameCircle'
 const About = () => {
   return (
     <div className='about-container'>
-      <div className='intro-self'>
+      <div className='intro-self animate__animated animate__fadeInLeft'>
         <TextNormal>Hello, It's me</TextNormal>
         <TextBold>Đặng Duy Bằng</TextBold>
         <TextTyping className='name'>{`And I am a Software Engineer`}</TextTyping>
@@ -29,12 +29,10 @@ const About = () => {
         <ButtonLight>More About Me</ButtonLight>
       </div>
       <div className='frame-avatar'>
-        <FrameCircle src='src/assets/images/avatar-bangdd.png' />
-        {/* <img className='bg-avatar' alt='profile-dtmt' src={"src/assets/images/frame-avatar.png"} /> */}
-        {/* <img className='avatar' alt='profile-dtmt' src={"src/assets/images/profile-dtmt.png"} /> */}
+        <FrameCircle className='animate__animated animate__fadeInRight' src='src/assets/images/avatar-bangdd.png' />
       </div>
     </div >
   )
 }
 
-export default About
+export default About;

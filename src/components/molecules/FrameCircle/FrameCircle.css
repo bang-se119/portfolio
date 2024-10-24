@@ -1,7 +1,7 @@
 .frame-circle-container {
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 290px;
+  height: 290px;
   background-color: white;
   border-radius: 50%;
   display: flex;
@@ -25,6 +25,7 @@
   height: 100%;
   object-fit: contain;
   border-radius: 50%;
+  transition: transform 3s ease;
 }
 
 .frame-circle-container .circle-inside {
@@ -36,17 +37,8 @@
   justify-content: center;
   align-items: center;
   border-top: 5px solid #1794cf;
-  animation: ani 3s linear infinite;
+  animation: zoomOut1 3s linear infinite;
   position: absolute;
-}
-
-@keyframes ani {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .frame-circle-container:hover {
@@ -56,6 +48,15 @@
 }
 
 .frame-circle-container img:hover {
-  transform: scale(1.1);
-  transition-duration: 3s;
+  transform: scale(1.3) translateY(-19.5px);
+  transition-duration: 2s;
+}
+
+@keyframes zoomOut1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

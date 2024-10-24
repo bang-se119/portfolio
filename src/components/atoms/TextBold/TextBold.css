@@ -1,4 +1,10 @@
 .text-bold-container .text {
-    font-size: 2.5rem;
-    font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.text-bold-container .text:hover {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }

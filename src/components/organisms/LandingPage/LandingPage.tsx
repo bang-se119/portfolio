@@ -2,15 +2,20 @@ import React from 'react'
 import "./LandingPage.css"
 import About from '../About/About'
 import Education from '../Education/Education'
+import 'animate.css';
+import Experience from '../Experience/Experience';
 
 const LandingPage = () => {
     return (
         <div className='landing-page-container'>
-            <section className='section part-about'>
+            <section id='about' className='section part-about'>
                 <About />
             </section>
-            <section className='section part-education'>
+            <section id='education' className='section part-education'>
                 <Education />
+            </section>
+            <section id='experience' className='section part-experience'>
+                <Experience />
             </section>
         </div>
     )

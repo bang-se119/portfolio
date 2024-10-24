@@ -1,0 +1,67 @@
+.card-education-container {
+  width: 600px;
+  height: 400px;
+  background-color: rgba(220, 191, 118, 0.3);
+  border: 1px solid black;
+  border-radius: 25px;
+  z-index: 2;
+  margin-bottom: 100px;
+}
+
+.card-education-container .close-button {
+  background-color: rgba(220, 191, 118, 0.5);
+  border: 1px solid black;
+  width: 100px;
+  height: 40px;
+  border-radius: 32% 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-education-container .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.card-education-container .school-name {
+  font-size: 1.5rem;
+}
+
+.card-education-container .certification {
+    font-weight: 300;
+}
+
+.card-education-container .period {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.card-education-container .content {
+  padding: 10px 50px;
+  margin-top: 25px;
+  font-size: 1.1rem;
+}
+
+.card-education-container .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card-education-container .item .value {
+    font-weight: 300;
+}
+
+.card-education-container .icon {
+  width: 45px;
+  mix-blend-mode: multiply;
+}

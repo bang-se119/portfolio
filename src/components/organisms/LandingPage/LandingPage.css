@@ -1,19 +1,15 @@
 .landing-page-container {
-
 }
 
 .landing-page-container .section {
-    height: 100vh;
+  height: 100vh;
 }
 
 .landing-page-container .part-about {
-
-}   
-
-.landing-page-container .part-about:hover {
-
-}   
+}
 
 .landing-page-container .part-education {
+}
 
+.landing-page-container .part-experience {
 }

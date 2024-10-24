@@ -1,19 +1,30 @@
 .app-header-container {
-    width: 100%;
-    min-height: 80px;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: fixed;
-    background-color: transparent;
-    border: 1px solid white;
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: transparent;
+  border: 1px solid white;
+  z-index: 100;
 }
 
 .app-header-container .title {
-    font-size: 1.5rem;
-    margin-left: 20px;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  position: absolute;
+  left: 10px;
+}
+
+@media screen and (max-width: 850px) {
+  .app-header-container {
     position: absolute;
-    left: 10px;
+    border: unset
+  }
+  .app-header-container .title {
+    margin-left: 10px;
+    font-size: 2rem;
+  }
 }

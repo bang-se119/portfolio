@@ -2,20 +2,24 @@
   width: 100%;
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: flex-end;
-  background: linear-gradient(
-    to right,
-    rgb(255, 255, 255) 5%,
-    rgb(137, 192, 221) 80%
-  );
+  align-items: center;
+  background-color: hsla(193, 100%, 84%, 1);
+  background-image: radial-gradient(
+      at 0% 57%,
+      hsla(120, 0%, 100%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 2% 87%, HSLA(55,0%,82%,1) 0px, transparent 50%),
+    radial-gradient(at 44% 45%, hsla(0, 0%, 100%, 1) 0px, transparent 50%);
 }
 
 .about-container .intro-self {
-  height: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-self: center;
 }
 
 .about-container .name {
@@ -33,5 +37,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+}
+
+@media screen and (max-width: 850px) {
+  .about-container .intro-self, .frame-avatar {
+    scale: 0.9;
+    margin-top: 50px;
+  }
 }

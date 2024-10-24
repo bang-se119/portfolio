@@ -1,9 +1,190 @@
+@import "animate.css";
+
 .education-container {
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    rgb(132, 201, 236) 5%,
-    rgb(172, 182, 186) 80%
-  );
+  background-image: url(src/assets/images/sky.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-container .road {
+  background-image: url(src/assets/images/road.jpg);
+  background-repeat: repeat-x;
+  position: absolute;
+  height: 120px;
+  width: 500%;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  animation: road 15s linear infinite;
+}
+
+.education-container .city {
+  background-image: url(src/assets/images/city.png);
+  background-repeat: repeat-x;
+  position: absolute;
+  height: 250px;
+  width: 500%;
+  display: block;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  animation: city 20s linear infinite;
+}
+
+.education-container .schools {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  z-index: 1;
+  bottom: 110px;
+}
+
+.education-container .schools img {
+  object-fit: contain;
+  animation: shake 8s infinite;
+}
+
+.education-container .schools .selected {
+  border: 2px solid rgb(137, 137, 137);
+  border-radius: 50%;
+}
+
+.education-container .schools img:hover {
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.education-container .schools img:hover {
+  animation: rubberBand 2x linear;
+}
+
+.education-container .kindergarten {
+  width: 100px;
+}
+
+.education-container .primary-school {
+  width: 120px;
+}
+
+.education-container .secondary-school {
+  width: 180px;
+}
+
+.education-container .high-school {
+  width: 200px;
+}
+
+.education-container .university {
+  width: 250px;
+}
+
+.education-container .car {
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+  z-index: 3;
+  transition: transform 15s ease-out;
+}
+
+.education-container .car:hover {
+  transform: translateX(calc(100vw - 400px));
+}
+
+.education-container .chassis {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+  width: 350px;
+  position: absolute;
+}
+
+.education-container .chassis img {
+  width: 100%;
+  animation: chassis 1s linear infinite;
+}
+
+.education-container .wheels {
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 102px;
+  position: absolute;
+}
+
+.education-container .wheels img {
+  width: 72px;
+  height: 72px;
+  animation: wheel 1.5s linear infinite;
+}
+
+.education-container .front-wheel {
+  position: absolute;
+  left: 65px;
+}
+
+.education-container .back-wheel {
+  position: absolute;
+  left: -131px;
+  rotate: 100deg;
+}
+
+@keyframes road {
+  100% {
+    transform: translateX(-3400px);
+  }
+}
+
+@keyframes city {
+  100% {
+    transform: translateX(-1400px);
+  }
+}
+
+@keyframes chassis {
+  100% {
+    transform: translateY(-1.5px);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+  0% {
+    transform: translateY(-1.5px);
+  }
+}
+
+@keyframes wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

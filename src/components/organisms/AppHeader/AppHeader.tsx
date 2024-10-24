@@ -4,7 +4,7 @@ import NavigatorBar from '../../molecules/NavigatorBar/NavigatorBar'
 
 const AppHeader = () => {
     return (
-        <div className='app-header-container'>
+        <div className='app-header-container animate__animated animate__fadeInDown'>
             <div className='title'>
                 Portfolio Profile
             </div>
