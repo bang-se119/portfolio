@@ -52,7 +52,7 @@ const Education = () => {
                             onClick={() => openCardEducation(data.level)} 
                             className={`${data.level} ${selectedSchool === data.level && "selected"}`}
                             alt={data.level}
-                            src={`public/images/${data.level}.png`}
+                            src={`/portfolio-astro/images/${data.level}.png`}
                         />
                     })
                 }
