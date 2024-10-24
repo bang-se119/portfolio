@@ -14,7 +14,7 @@ const Experience = () => {
                         className="vertical-timeline-element--work"
                         date="2022 - present"
                         iconStyle={{ background: 'hsla(193, 100%, 84%, 1)', color: '#fff', display: "flex", justifyContent: "center", alignItems: "center" }}
-                        icon={<img style={{ width: 50 }} alt='work-1' src='src/assets/images/work.gif' />}
+                        icon={<img style={{ width: 50 }} alt='work-1' src='public/images/work.gif' />}
                     >
                         <h3 className="vertical-timeline-element-title">Fullstack Developer</h3>
                         <h4 className="vertical-timeline-element-subtitle">224A, Dien Bien Phu S.t</h4>
@@ -24,7 +24,7 @@ const Experience = () => {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         iconStyle={{ background: 'HSLA(144,100%,77%,1)', color: '#fff',display: "flex", justifyContent: "center", alignItems: "center" }}
-                        icon={<img style={{ width: 50 }} alt='work-1' src='src/assets/images/star.gif' />}
+                        icon={<img style={{ width: 50 }} alt='work-1' src='public/images/star.gif' />}
                     />
                 </VerticalTimeline>
             </div>

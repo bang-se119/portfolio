@@ -4,7 +4,7 @@ import './ContactFacebook.css';
 const ContactFacebook = () => {
   return (
     <div className='contact-facebook-container'>
-        <img alt='logo-facebook' src='src/assets/images/logo-facebook.png' />
+        <img alt='logo-facebook' src='public/images/logo-facebook.png' />
     </div>
   )
 }
