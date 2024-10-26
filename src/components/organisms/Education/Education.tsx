@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import "./Education.css"
 import 'react-vertical-timeline-component/style.min.css';
 import CardEducation from '../../molecules/CardEducation/CardEducation';

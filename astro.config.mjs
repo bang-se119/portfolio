@@ -7,4 +7,7 @@ export default defineConfig({
   integrations: [react()],
   site: "https://bangdd.github.io",
   base: "portfolio-astro",
+  redirects: {
+    '/': '/portfolio-astro',
+  }
 });
