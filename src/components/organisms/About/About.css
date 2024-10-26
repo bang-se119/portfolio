@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  background-color: hsla(193, 100%, 84%, 1);
+  background-color: hsla(195, 100%, 50%, 0.8);
   background-image: radial-gradient(
       at 0% 57%,
       hsla(120, 0%, 100%, 1) 0px,
