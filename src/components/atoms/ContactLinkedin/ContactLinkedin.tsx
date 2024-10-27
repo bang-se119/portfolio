@@ -4,7 +4,7 @@ import "./ContactLinkedin.css"
 const ContactLinkedin = () => {
   return (
     <div className='contact-linkedin-container'>
-        <img alt='logo-linkedin' src='/portfolio-astro/images/logo-linkedin.png' />
+        <img alt='logo-linkedin' src='/portfolio/images/logo-linkedin.png' />
     </div>
   )
 }

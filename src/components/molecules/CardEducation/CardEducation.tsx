@@ -18,17 +18,17 @@ const CardEducation = (props: ICardEducationProps) => {
       </div>
       <div className='content'>
         <div className='item'>
-          <img className='icon' alt='graduation' src='/portfolio-astro/images/major.gif' />
+          <img className='icon' alt='graduation' src='/portfolio/images/major.gif' />
           <p className='label'>Major: </p>
           <p className='value'>Software Engineering</p>
         </div>
         <div className='item'>
-          <img className='icon' alt='graduation' src='/portfolio-astro/images/gpa.png' />
+          <img className='icon' alt='graduation' src='/portfolio/images/gpa.png' />
           <p className='label'>GPA: </p>
           <p className='value'>3.2/4</p>
         </div>
         <div className='item'>
-          <img className='icon' alt='graduation' src='/portfolio-astro/images/graduation.gif' />
+          <img className='icon' alt='graduation' src='/portfolio/images/graduation.gif' />
           <p className='label'>Graduation Year: </p>
           <p className='value'>2023</p>
         </div>

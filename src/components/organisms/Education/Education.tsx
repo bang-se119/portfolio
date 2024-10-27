@@ -52,18 +52,18 @@ const Education = () => {
                             onClick={() => openCardEducation(data.level)} 
                             className={`${data.level} ${selectedSchool === data.level && "selected"}`}
                             alt={data.level}
-                            src={`/portfolio-astro/images/${data.level}.png`}
+                            src={`/portfolio/images/${data.level}.png`}
                         />
                     })
                 }
             </div>
             <div className='car'>
                 <div className="chassis">
-                    <img alt='chassis' src='/portfolio-astro/images/chassis.png' />
+                    <img alt='chassis' src='/portfolio/images/chassis.png' />
                 </div>
                 <div className='wheels'>
-                    <img className='front-wheel' alt='front-wheel' src='/portfolio-astro/images/wheel.png' />
-                    <img className='back-wheel' alt='back-wheel' src='/portfolio-astro/images/wheel.png' />
+                    <img className='front-wheel' alt='front-wheel' src='/portfolio/images/wheel.png' />
+                    <img className='back-wheel' alt='back-wheel' src='/portfolio/images/wheel.png' />
                 </div>
             </div>
             {selectedSchool ? <CardEducation onClose={closeCardEducation} /> : <></>}
