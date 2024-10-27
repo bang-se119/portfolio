@@ -1,4 +1,4 @@
-.contact-facebook-container {
+.contact-social-container {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -8,16 +8,19 @@
   align-items: center;
 }
 
-.contact-facebook-container img {
-  width: 100%; 
-  height: 100%; 
+.contact-social-container img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.contact-facebook-container:hover {
+.contact-social-container:hover {
   opacity: 0.8;
   box-shadow: 0 0 10px #16b1d0, 0 0 10px #21a2b3, 0 0 10px #16b1d0;
-  border-top: 1px solid #1794cf;
   animation: ani 3s linear infinite;
 }
 

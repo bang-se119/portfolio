@@ -4,13 +4,15 @@ import "./TextBold.css"
 interface TextBoldProps {
     children?: React.ReactNode;
     className?: string;
+    size?: number;
+    color?: string;
 }
 
 const TextBold = (props: TextBoldProps) => {
-    const { children, className } = props
+    const { children, className, size, color } = props
     return (
         <div className="text-bold-container">
-            <p className={`text ${className}`}>{children}</p>
+            <p style={{fontSize: size, color}} className={`text ${className}`}>{children}</p>
         </div>
     )
 }

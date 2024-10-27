@@ -9,9 +9,9 @@ interface ButtonLightProsp {
 const ButtonLight = (props: ButtonLightProsp) => {
     const { children } = props
     return (
-        <button className='button-light-container'>
+        <a href='#education' className='button-light-container'>
             <TextNormal size={18} color={"white"}>{children}</TextNormal>
-        </button>
+        </a>
     )
 }
 

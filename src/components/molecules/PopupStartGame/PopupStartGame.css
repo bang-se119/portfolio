@@ -1,0 +1,50 @@
+.popup-start-game-container {
+  background-color: rgba(103, 93, 93, 0.6);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.popup-start-game-container .overlay-wrapper {
+  width: 270px;
+  height: 310px;
+  background-color: rgba(81, 81, 81, 0.5);
+  border: 3px solid #fff;
+  border-radius: 25px;
+  z-index: 2;
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-start-game-container .option {
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.popup-start-game-container .option:hover {
+  color: #ffbf35;
+}
+
+.popup-start-game-container .option:hover img {
+  visibility: visible;
+}
+
+.popup-start-game-container .option img {
+  width: 50px;
+  position: absolute;
+  margin-left: -55px;
+  visibility: hidden;
+  animation-name: swing;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}

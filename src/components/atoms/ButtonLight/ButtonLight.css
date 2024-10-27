@@ -2,9 +2,11 @@
   background-color: black;
   width: fit-content;
   border-radius: 30px;
-  padding: 10px 30px;
+  padding: 10px 35px;
   box-shadow: 0 0 5px #16b1d0, 0 0 0px #369daf, 0 0 10px #16b1d0;
   transition: transform 3s ease;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .button-light-container:hover {

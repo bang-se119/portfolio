@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: hsla(195, 100%, 50%, 1);
+  background-color: hsla(195, 100%, 60%, 1);
   background-image: radial-gradient(
       at 0% 100%,
       hsla(0, 0%, 100%, 1) 0px,

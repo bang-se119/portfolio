@@ -3,12 +3,10 @@ import "./About.css"
 import TextTyping from '../../atoms/TextTyping/TextTyping'
 import TextBold from '../../atoms/TextBold/TextBold'
 import TextNormal from '../../atoms/TextNormal/TextNormal'
-import ContactLinkedin from '../../atoms/ContactLinkedin/ContactLinkedin'
-import ContactFacebook from '../../atoms/ContactFacebook/ContactFacebook'
 import Space from '../../atoms/Space/Space'
-import ContactMail from '../../atoms/ContactMail/ContactMail'
 import ButtonLight from '../../atoms/ButtonLight/ButtonLight'
 import FrameCircle from '../../molecules/FrameCircle/FrameCircle'
+import ContactSocial, { Social } from '@components/atoms/ContactSocial/ContactSocial'
 
 const About = () => {
   return (
@@ -21,9 +19,10 @@ const About = () => {
         <TextNormal size={18}>A full-stack developer is a versatile tech profile who possesses the skills {`\n`} and knowledge to handle all aspects of web development.</TextNormal>
         <Space verticalSpace={25} />
         <div className='contacts'>
-          <ContactLinkedin />
-          <ContactMail />
-          <ContactFacebook />
+          <ContactSocial href="https://linkedin.com/in/bangdd" social={Social.Linkedin} />
+          <ContactSocial href="https://www.facebook.com/bangduy.se119" social={Social.Facebook} />
+          <ContactSocial href="mailto:bangduy.se119@gmail.com" social={Social.Email} />
+          <ContactSocial href="https://github.com/bang-se119" social={Social.Github} />
         </div>
         <Space verticalSpace={25} />
         <ButtonLight>More About Me</ButtonLight>

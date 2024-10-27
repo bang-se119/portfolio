@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./Education.css"
 import 'react-vertical-timeline-component/style.min.css';
 import CardEducation from '../../molecules/CardEducation/CardEducation';
+import PopupStartGame from '@components/molecules/PopupStartGame/PopupStartGame';
 
 enum ESchool {
     Kindergarten = "kindergarten",
@@ -49,7 +50,7 @@ const Education = () => {
                     schoolsList.map((data) => {
                         return <img
                             id={data.level}
-                            onClick={() => openCardEducation(data.level)} 
+                            onClick={() => openCardEducation(data.level)}
                             className={`${data.level} ${selectedSchool === data.level && "selected"}`}
                             alt={data.level}
                             src={`/portfolio/images/${data.level}.png`}
@@ -67,6 +68,7 @@ const Education = () => {
                 </div>
             </div>
             {selectedSchool ? <CardEducation onClose={closeCardEducation} /> : <></>}
+            <PopupStartGame />
         </div>
     )
 }
