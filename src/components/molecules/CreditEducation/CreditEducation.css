@@ -1,0 +1,53 @@
+.credit-education-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.credit-education-container .schools {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 110px;
+}
+
+.credit-education-container .schools img {
+  object-fit: contain;
+}
+
+.credit-education-container .stone {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+.credit-education-container .stone .stone-s {
+  width: 100px;
+  animation: drop 3s ease-out infinite;
+  margin-left: 220px;
+}
+
+.credit-education-container .stone .stone-m {
+  width: 150px;
+  animation: drop 5s ease-out infinite;
+  margin-left: 220px;
+}
+
+.credit-education-container .stone .stone-l {
+  width: 200px;
+  animation: drop 8s ease-out infinite;
+  margin-left: 220px;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-90vh) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(68vh) rotate(145deg);
+    opacity: 1;
+  }
+}

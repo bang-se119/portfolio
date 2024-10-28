@@ -8,7 +8,6 @@
   position: fixed;
   background-color: transparent;
   border: 1px solid white;
-  /* z-index: 100; */
 }
 
 .app-header-container .title {

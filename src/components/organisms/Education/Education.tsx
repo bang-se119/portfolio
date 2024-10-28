@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import "./Education.css"
 import 'react-vertical-timeline-component/style.min.css';
 import CardEducation from '../../molecules/CardEducation/CardEducation';
-import PopupStartGame from '@components/molecules/PopupStartGame/PopupStartGame';
+import CreditEducation from '@components/molecules/CreditEducation/CreditEducation';
 
-enum ESchool {
+export enum ESchool {
     Kindergarten = "kindergarten",
     PrimarySchool = "primary-school",
     SecondarySchool = "secondary-school",
@@ -45,19 +45,6 @@ const Education = () => {
         <div id="#education" className='education-container'>
             <div className="road"></div>
             <div className="city"></div>
-            <div className='schools'>
-                {
-                    schoolsList.map((data) => {
-                        return <img
-                            id={data.level}
-                            onClick={() => openCardEducation(data.level)}
-                            className={`${data.level} ${selectedSchool === data.level && "selected"}`}
-                            alt={data.level}
-                            src={`/portfolio/images/${data.level}.png`}
-                        />
-                    })
-                }
-            </div>
             <div className='car'>
                 <div className="chassis">
                     <img alt='chassis' src='/portfolio/images/chassis.png' />
@@ -68,7 +55,7 @@ const Education = () => {
                 </div>
             </div>
             {selectedSchool ? <CardEducation onClose={closeCardEducation} /> : <></>}
-            <PopupStartGame />
+            <CreditEducation />
         </div>
     )
 }
